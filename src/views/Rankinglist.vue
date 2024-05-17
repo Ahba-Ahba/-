@@ -123,7 +123,7 @@ import pic from "@/components/pic.vue";
 const { data: AllRanking } = useRequest(getAllRanking, {});
 console.log(AllRanking);
 
-const { data: AllListSummary } = useRequest<List>(getListSummary);
+const { data: AllListSummary } = useRequest(getListSummary);
 console.log(AllListSummary)
 
 const { data: SongListDetails } = useRequest(() => getSongListDetails({ id: 19723756 }));
@@ -134,7 +134,7 @@ const active = ref(0);
 
 // 计算属性，用于过滤数据
 const filteredList = computed(() => {
-    return AllListSummary?.value?.filter((item: List) => item.tracks.length !== 0);
+    return AllListSummary?.value?.filter((item) => item.tracks.length !== 0);
 });
 
 </script>
