@@ -1,6 +1,6 @@
 
 namespace Res {
-	interface Song {
+export	interface Song {
   name: string;
   id: number;
   pst: number;
@@ -93,7 +93,7 @@ namespace Res {
     }[];
   };
 }
-  interface getDefaultKey {
+export  interface getDefaultKey {
     code: number;
     message: object;
     data: {
@@ -112,7 +112,7 @@ namespace Res {
       trp_id: object;
     };
   }
-  interface searchResult {
+export  interface searchResult {
     result: {
       searchQcReminder: object;
       songs: Song[];
@@ -120,7 +120,7 @@ namespace Res {
     };
     code: number;
   }
-  export interface List {
+ export interface List {
 	subscribers: any[];
 	subscribed?: any;
 	creator?: any;
