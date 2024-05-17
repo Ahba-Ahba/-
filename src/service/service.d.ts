@@ -1,4 +1,6 @@
-interface Song {
+
+namespace Res {
+	interface Song {
   name: string;
   id: number;
   pst: number;
@@ -91,7 +93,6 @@ interface Song {
     }[];
   };
 }
-namespace Res {
   interface getDefaultKey {
     code: number;
     message: object;
@@ -761,3 +762,4 @@ export interface RootObject {
 	songFromUsers?: any;
 }
 }
+

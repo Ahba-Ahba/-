@@ -116,7 +116,6 @@
 <script lang="ts" setup>
 import { getAllRanking, getListSummary, getSongListDetails } from "@/service";
 import { useRequest } from "vue-request";
-import { List } from "@/service";
 import pic from "@/components/pic.vue";
 
 
