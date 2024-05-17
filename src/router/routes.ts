@@ -1,4 +1,3 @@
-import { vue } from '@vitejs/plugin-vue';
 import type { RouteRecordRaw } from "vue-router";
 import A from "@/views/a.vue";
 import B from "@/views/b.vue";
